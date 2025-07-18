@@ -11,6 +11,9 @@ import useFormStore from '@/stores/forms/form';
 
 export default function Signup() {
 
+
+
+    
     const verifyFields= useFormStore((state)=> state.verifyFields1)
 
   return (
