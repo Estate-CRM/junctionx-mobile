@@ -35,7 +35,10 @@ const PropertyDetailsCard = () => {
         <View style={styles.mapSection}>
           <Text style={styles.mapLabel}>Location</Text>
           <TouchableOpacity onPress={()=>{
-            router.push("/(misc)/map")
+            // router.push("/(misc)/map")
+            router.push("/(misc)/client_map")
+
+            //TODO fix this: 
           }}>
             <Text style={styles.openMap}>Open Map</Text>
           </TouchableOpacity>

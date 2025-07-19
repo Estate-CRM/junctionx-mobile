@@ -8,20 +8,18 @@ import { BeveledButton } from '@/components/buttons/beveled_button';
 import { logoName } from '@/constants/texts';
 import { AppBar } from '@/components/app_bar';
 import { ForgotPassword } from '@/components/text/forgot_password';
+import { Welcome } from '@/components/text/welcome';
 
 export default function Signup() {
-
-
-
     return (
         <View style={styles.container}>
             <AppBar />
-            <Text style={styles.titleText}>Welcome in {logoName}</Text>
+            <Welcome></Welcome>
             <View style={{ height: 40 }} />
             <Text style={styles.titleTextB}>Log in</Text>
             <View style={{ height: 40 }} />
-            <TextField fieldKey="email" label="Email Address" />
-            <TextField fieldKey="password" label="Password" />
+            <TextField  fieldKey="email" label="Email Address" placeholder='example@gmail.com'/>
+            <TextField  fieldKey="password" label="Password"  />
             
             <ForgotPassword/>
             <BeveledButton
@@ -30,7 +28,8 @@ export default function Signup() {
                 color="#00000000"
                 title="Continue"
                 onPress={() => {
-                    router.push('/(tabs)/home');
+                    console.log("oh")
+                    router.push('/(tabs)/profile');
                 }}
             />
         </View>

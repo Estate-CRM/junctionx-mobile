@@ -1,3 +1,4 @@
+import usePropertyFormStore from "@/stores/forms/property_form";
 import React, { useState } from "react";
 import { StyleSheet, Text, View, ViewStyle } from "react-native";
 import MapView, { Marker, MapPressEvent, Region } from "react-native-maps";
@@ -22,6 +23,10 @@ export const InteractiveMap: React.FC<Props> = ({
   containerStyle = {},
   locations = [],
 }) => {
+  const latitude= usePropertyFormStore((state)=>state.fields["latitude"])
+  const longtitude= usePropertyFormStore((state)=>state.fields["longtitude"])
+  const setLa= usePropertyFormStore((state)=>state.setField("latitude", latitude))
+  const setLo= usePropertyFormStore((state)=>state.setField("longtitude",longtitude))
   const [markerPosition, setMarkerPosition] = useState<Coordinate | null>(null);
 
   const handlePress = (event: MapPressEvent) => {

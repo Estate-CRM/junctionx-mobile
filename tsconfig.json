@@ -13,5 +13,5 @@
     "**/*.tsx",
     ".expo/types/**/*.ts",
     "expo-env.d.ts"
-, "components/map.jsx"  ]
+, "components/map.jsx", "components/text_fields/text_field.jsx", "components/text_fields/text_field.jsx", "components/text_fields/text_field.jsx", "app/(misc)/messages.jsx"  ]
 }

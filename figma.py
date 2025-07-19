@@ -58,17 +58,13 @@ def figma_css_to_rn(css_text: str):
 
 # Example usage
 figma_css = """
-flex-direction: column;
-justify-content: center;
-align-items: flex-start;
-padding-horizontal: 3px;
-padding-vertical: 8px;
-gap: 10px;
-width: 102px;
-height: 66px;
-background: #FFFFFF;
-border: 1px solid #C4C4C4;
-border-radius: 10px;
+font-family: Poppins;
+font-weight: 600;
+font-style: SemiBold;
+font-size: 18px;
+leading-trim: NONE;
+line-height: 160%;
+letter-spacing: 0%;
 
 """
 

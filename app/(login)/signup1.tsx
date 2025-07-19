@@ -8,6 +8,7 @@ import { HaveAccountText } from '@/components/already_account';
 import { logoName } from '@/constants/texts';
 import { AppBar } from '@/components/app_bar';
 import useFormStore from '@/stores/forms/form';
+import { Welcome } from '@/components/text/welcome';
 
 export default function Signup() {
 
@@ -19,13 +20,13 @@ export default function Signup() {
   return (
     <View style={styles.container}>
         <AppBar/>
-      <Text style={styles.titleText}>Welcome in {logoName}</Text>
+      <Welcome></Welcome>
       <View style={{ height: 40 }} />
       <Text style={styles.titleTextB}>Sign up</Text>
       <View style={{ height: 40 }} />
-      <TextField fieldKey="firstName" label="First Name"   placeholder="rimel" />
-      <TextField fieldKey="lastName" label="Last Name"  placeholder="arab"/>
-      <TextField fieldKey="phone" label="Phone Number"  placeholder="example:0556677225" />
+      <TextField   fieldKey="firstName" label="First Name"   placeholder="rimel" />
+      <TextField   fieldKey="lastName" label="Last Name"  placeholder="arab"/>
+      <TextField   fieldKey="phone" label="Phone Number"  placeholder="example:0556677225" />
       <BeveledButton
       borderColor='#54BD95'
       textStyle={{color:"#54BD95"}}
