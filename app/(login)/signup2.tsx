@@ -9,6 +9,7 @@ import { logoName } from '@/constants/texts';
 import PasswordTextField from '@/components/text_fields/password_text_field';
 import { AppBar } from '@/components/app_bar';
 import useFormStore from '@/stores/forms/form';
+import { Welcome } from '@/components/text/welcome';
 
 export default function Signup() {
 
@@ -17,7 +18,7 @@ export default function Signup() {
   return (
     <View style={styles.container}>
               <AppBar/>
-      <Text style={styles.titleText}>Welcome in {logoName}</Text>
+      <Welcome></Welcome>
       <View style={{ height: 40 }} />
       <Text style={styles.titleTextB}>Sign up</Text>
       <View style={{ height: 40 }} />

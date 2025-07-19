@@ -1,5 +1,5 @@
 import useFormStore from '@/stores/forms/form';
-import { Feather } from '@expo/vector-icons';
+import { Feather, Ionicons } from '@expo/vector-icons';
 import React from 'react';
 import {
   StyleSheet,
@@ -11,9 +11,13 @@ import {
 } from 'react-native';
 
 type FeatherIconName = keyof typeof Feather.glyphMap;
-
+type FormStore = {
+  fields: Record<string, string>;
+  setField: (key: string, value: string) => void;
+};
 interface CustomInputProps extends TextInputProps {
-  label: string;
+  leadingIcon?: FeatherIconName;
+  label?: string;
   icon?: FeatherIconName;
   border?: boolean;
   onPressIcon?: () => void,
@@ -21,6 +25,7 @@ interface CustomInputProps extends TextInputProps {
 }
 
 const TextField: React.FC<CustomInputProps> = ({
+  leadingIcon,
   label,
   icon,
   border = true,
@@ -36,7 +41,7 @@ const TextField: React.FC<CustomInputProps> = ({
     <View>
 
       <View style={styles.wrapper}>
-        <Text style={styles.label}>{label}</Text>
+        {label && <Text style={styles.label}>{label}</Text>}
 
         <View
           style={[
@@ -44,6 +49,17 @@ const TextField: React.FC<CustomInputProps> = ({
             border && { borderColor: '#B0B2B4', borderWidth: 1 },
           ]}
         >
+          {leadingIcon &&
+          <Feather
+          style={
+            {
+              paddingTop:6,
+            }
+          }
+            name = {leadingIcon}
+            color={"#919295"}
+            size={24}
+          />}
 
           <TextInput
             style={[

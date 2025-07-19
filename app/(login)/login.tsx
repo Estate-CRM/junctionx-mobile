@@ -8,6 +8,8 @@ import { BeveledButton } from '@/components/buttons/beveled_button';
 import { logoName } from '@/constants/texts';
 import { AppBar } from '@/components/app_bar';
 import { ForgotPassword } from '@/components/text/forgot_password';
+import { HaveAccountText } from '@/components/already_account';
+import { Welcome } from '@/components/text/welcome';
 
 export default function Signup() {
 
@@ -16,7 +18,7 @@ export default function Signup() {
     return (
         <View style={styles.container}>
             <AppBar />
-            <Text style={styles.titleText}>Welcome in {logoName}</Text>
+            <Welcome></Welcome>
             <View style={{ height: 40 }} />
             <Text style={styles.titleTextB}>Log in</Text>
             <View style={{ height: 40 }} />
@@ -24,6 +26,7 @@ export default function Signup() {
             <TextField fieldKey="password" label="Password" />
             
             <ForgotPassword/>
+            <View style={{height:16}}/>
             <BeveledButton
                 borderColor='#54BD95'
                 textStyle={{ color: "#54BD95" }}
@@ -33,6 +36,7 @@ export default function Signup() {
                     router.push('/(tabs)/home');
                 }}
             />
+                <HaveAccountText text='Sign up'/>
         </View>
     );
 }

@@ -5,7 +5,6 @@ import LogoName from "../assets/logo/logo_name_light.svg"
 
 const styles = StyleSheet.create({
     normalText: {
-        width: 262,
         height: 29,
         fontFamily: "Poppins-600",
         fontStyle: "normal",
@@ -42,7 +41,7 @@ export const TopBar: React.FC<TopBarProps> = ({ title, subTitle, ...props }) => 
     
     return (<View style={styles.container }>
         <View style={{ width: 262}}>
-            <View style={{ flexDirection: "row", justifyContent: "center"}}>
+            <View style={{ flexDirection: "row", justifyContent: "flex-start", alignItems: "center" }}>
   <Text style={styles.normalText}>Welcome to </Text>
   <LogoName height={19} width={88} />
 </View>

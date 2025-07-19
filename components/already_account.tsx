@@ -40,6 +40,7 @@ export const HaveAccountText: React.FC<HaveAccountProps> = ({ text, ...props }) 
   return (
     <View
       style={{
+        marginTop:30,
         flexDirection: "row",
         alignItems: "center",
         alignContent: "space-between",
@@ -50,7 +51,11 @@ export const HaveAccountText: React.FC<HaveAccountProps> = ({ text, ...props }) 
     >
       <Text style={styles.txt}>Already have an account?  </Text>
       <TouchableOpacity onPress={()=>{
-        router.push("/(login)/login");
+        if(text == "log in" || text == "Log in"){
+          router.replace("/(login)/login");
+        }else{
+          router.replace("/(login)/signup1");
+        }
       }}>
         <Text style={styles.txtB}>{text}</Text>
       </TouchableOpacity>

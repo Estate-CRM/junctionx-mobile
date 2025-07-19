@@ -11,7 +11,7 @@ export const mockProperties: Property[] = [
     property_type: 'apartment',
     rooms: 3,
     features: ['balcony', 'garage', 'elevator'],
-    description: 'Modern apartment in downtown with great views.',
+    description: 'Modern apartment in downtown with great views. It\'s surely worth the money you would pay for it, you pay me and i give you the best you can get at that place, have fun!',
     images: [
       'https://images-ext-1.discordapp.net/external/tB3uQOeLUVrxP504xpm-25Qf5_tqdijcAV4ZlsNryRA/https/i.pinimg.com/736x/89/73/5c/89735c60d0e4fc45e8cfdd15ab184aa9.jpg?format=webp&width=550&height=930',
       'https://example.com/img2.jpg',
