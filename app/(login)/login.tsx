@@ -8,6 +8,7 @@ import { BeveledButton } from '@/components/buttons/beveled_button';
 import { logoName } from '@/constants/texts';
 import { AppBar } from '@/components/app_bar';
 import { ForgotPassword } from '@/components/text/forgot_password';
+import { HaveAccountText } from '@/components/already_account';
 import { Welcome } from '@/components/text/welcome';
 
 export default function Signup() {
@@ -22,6 +23,7 @@ export default function Signup() {
             <TextField  fieldKey="password" label="Password"  />
             
             <ForgotPassword/>
+            <View style={{height:24}}/>
             <BeveledButton
                 borderColor='#54BD95'
                 textStyle={{ color: "#54BD95" }}
@@ -32,6 +34,7 @@ export default function Signup() {
                     router.push('/(tabs)/profile');
                 }}
             />
+                <HaveAccountText text='Sign up'/>
         </View>
     );
 }

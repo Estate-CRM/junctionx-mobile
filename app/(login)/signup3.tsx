@@ -21,7 +21,9 @@ export default function Signup() {
       <View style={{ height: 40 }} />
       <Text style={styles.titleTextB}>Sign up</Text>
       <View style={{ height: 40 }} />
-      <ImageTextField fieldKey="email" label="national Id" placeholder='scan your national id card'/>
+      <ImageTextField fieldKey="email" label="national Id" placeholder='scan your national id card' onPressIcon={()=>{
+        router.push("/(login)/camera")
+      }}/>
       <ImageTextField fieldKey="password" label="Commercial Register" placeholder='scan your commercial register' />
       <BeveledButton
             borderColor='#54BD95'

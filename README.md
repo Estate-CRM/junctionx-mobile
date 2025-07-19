@@ -2,9 +2,7 @@
 
 **PropLink** is a mobile application designed to connect real estate agents with potential buyers or tenants. It simplifies the matching process between clients and properties using AI-driven recommendations.
 
-## Note
 
-the app code is in second_try branch 
 
 ---
 

@@ -37,23 +37,25 @@ export default function ContactCard({
                     </View>
                 </View>
             </View>
+            <View style={{ marginLeft: 50 }}>
 
-            <Text style={styles.textBold}>
-                <Ionicons name="pricetag" size={14} color="#444" /> {price} • {location}
-            </Text>
-            <Text style={styles.text}>
-                {type}   {size}
-            </Text>
+                <Text style={styles.textBold}>
+                    <Ionicons name="pricetag" size={14} color="#444" /> {price} • {location}
+                </Text>
+                <Text style={styles.text}>
+                    {type}   {size}
+                </Text>
 
-            <View style={styles.buttonsRow}>
-                <TouchableOpacity style={styles.callButton}>
-                    <Ionicons name="call" size={16} color="#fff" />
-                    <Text style={styles.callText}>Call</Text>
-                </TouchableOpacity>
-                <TouchableOpacity style={styles.emailButton}>
-                    <Ionicons name="mail" size={16} color="#444" type="feather" />
-                    <Text style={styles.emailText}>Call</Text>
-                </TouchableOpacity>
+                <View style={styles.buttonsRow}>
+                    <TouchableOpacity style={styles.callButton}>
+                        <Ionicons name="call" size={16} color="#fff" />
+                        <Text style={styles.callText}>Call</Text>
+                    </TouchableOpacity>
+                    <TouchableOpacity style={styles.emailButton}>
+                        <Ionicons name="mail" size={16} color="#444" type="feather" />
+                        <Text style={styles.emailText}>Call</Text>
+                    </TouchableOpacity>
+                </View>
             </View>
         </View>
     );
@@ -61,7 +63,8 @@ export default function ContactCard({
 
 const styles = StyleSheet.create({
     card: {
-        borderColor: '#E5E7EB',
+        marginHorizontal:12
+,        borderColor: '#E5E7EB',
         borderWidth: 1,
         borderRadius: 10,
         padding: 12,
@@ -81,6 +84,10 @@ const styles = StyleSheet.create({
     },
     nameMatch: {
         flex: 1,
+        flexDirection: "row",
+        justifyContent: "space-between",
+        marginRight: 8
+
     },
     name: {
         fontWeight: '600',
@@ -104,9 +111,12 @@ const styles = StyleSheet.create({
     },
     buttonsRow: {
         flexDirection: 'row',
+        justifyContent: 'space-around',
         marginTop: 10,
     },
     callButton: {
+        width: 120,  
+  justifyContent: "center",
         flexDirection: 'row',
         alignItems: 'center',
         backgroundColor: '#3366FF',
@@ -121,6 +131,8 @@ const styles = StyleSheet.create({
         fontWeight: '500',
     },
     emailButton: {
+        width: 120,
+  justifyContent: "center",
         flexDirection: 'row',
         alignItems: 'center',
         backgroundColor: '#F1F5F9',
@@ -134,15 +146,15 @@ const styles = StyleSheet.create({
         fontWeight: '500',
     },
     textBold: {
-  fontFamily: "Poppins-600",
-  fontSize: 15,
-  lineHeight: 23,
-  color: "#666666",
-},
+        fontFamily: "Poppins-600",
+        fontSize: 15,
+        lineHeight: 23,
+        color: "#666666",
+    },
     text: {
-  fontFamily: "Poppins-500",
-  fontSize: 15,
-  lineHeight: 23,
-  color: "#666666",
-}
+        fontFamily: "Poppins-500",
+        fontSize: 15,
+        lineHeight: 23,
+        color: "#666666",
+    }
 });

@@ -4,8 +4,6 @@ import PropertyTypeDropdown from "@/components/text_fields/property_type_dropdow
 import TextField from "@/components/text_fields/text_field";
 import { TopBar } from "@/components/top_bar";
 import TwoInputsRow from "@/components/two_input_row";
-import usePropertyFormStore from "@/stores/forms/property_form";
-import useFormStore from "@/stores/forms/property_form";
 import { Ionicons } from "@expo/vector-icons";
 import { SafeAreaView, ScrollView, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
