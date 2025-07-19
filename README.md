@@ -1,50 +1,74 @@
-# Welcome to your Expo app 👋
+# PropLink Front
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+**PropLink** is a mobile application designed to connect real estate agents with potential buyers or tenants. It simplifies the matching process between clients and properties using AI-driven recommendations.
 
-## Get started
 
-1. Install dependencies
 
-   ```bash
-   npm install
-   ```
+---
 
-2. Start the app
+## 🚀 Project Overview
 
-   ```bash
-   npx expo start
-   ```
+PropLink has two main parts separated based of the role of the user, one for the agent, and the other for the client, the app is in prototype state, and we focused on the agent part, nevertheless, we have the design of the 2 parts.
 
-In the output, you'll find options to open the app in a
+---
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## 🗂 Project Structure
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+A typical structure for PropLink Front might look like:
 
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+```
+PropLink_front/
+├── assets/              # Images, icons, fonts
+├── App/                 # App navigation logic and screens
+├── components/          # Reusable UI components
+├── constants/           # Static data
+├── models/              # Matching logic, helpers, scoring
+├── stores/              # Global state management
+├── App.js               # Main entry point
+├── package.json         # NPM dependencies
+└── ...
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+---
 
-## Learn more
+## 🛠️ Getting Started
 
-To learn more about developing your project with Expo, look at the following resources:
+### Prerequisites
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+- Node.js >= 16.x
+- npm or yarn
+- Expo CLI
+- Android Studio or Xcode (for emulator/simulator)
 
-## Join the community
+### Installation
 
-Join our community of developers creating universal apps.
+```bash
+git clone https://github.com/YourUsername/PropLink_front.git
+cd PropLink_front
+npm install
+# or
+yarn install
+```
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+### Running the App
+
+```bash
+npx expo start
+```
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request with your ideas, fixes, or improvements.
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License. See [LICENSE](LICENSE) for more details.
+
+---
+
+## 📬 Contact
+
+For support or questions, please contact the repository owner or open an issue in this repository.
