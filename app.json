@@ -2,7 +2,7 @@
   "expo": {
     "name": "junctionx_app",
     "slug": "junctionx_app",
-    "icon": "./assets/logo/logo.svg",
+    "icon": "./assets/logo/logo.png",
     "version": "1.0.0",
     "orientation": "portrait",
     "scheme": "junctionxapp",

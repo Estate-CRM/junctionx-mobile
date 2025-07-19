@@ -1,11 +1,11 @@
-import React from "react"
-import { StyleSheet, View } from "react-native"
+// import React from "react"
+// import { StyleSheet, View } from "react-native"
 
-export const UpdateLocationCard: React.FC=()=>{
-    return <View>
+// export const UpdateLocationCard: React.FC=()=>{
+//     return <View>
 
-    </View>
+//     </View>
 
-}
+// }
 
-const styles=StyleSheet.create()
+// const styles=StyleSheet.create()
