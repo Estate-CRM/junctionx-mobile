@@ -26,7 +26,7 @@ export default function Signup() {
             <TextField fieldKey="password" label="Password" />
             
             <ForgotPassword/>
-            <View style={{height:16}}/>
+            <View style={{height:24}}/>
             <BeveledButton
                 borderColor='#54BD95'
                 textStyle={{ color: "#54BD95" }}

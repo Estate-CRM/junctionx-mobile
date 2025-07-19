@@ -1,6 +1,7 @@
 import React from "react";
 import { View, Text, StyleSheet, Image, TouchableOpacity, ScrollView } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
+import { router } from "expo-router";
 
 const styles = StyleSheet.create({
   container: {
@@ -104,7 +105,9 @@ export default function ProfileScreen() {
         <Text style={styles.cardText}>Algiers, Algeria</Text>
       </View>
 
-      <TouchableOpacity style={styles.logoutBtn}>
+      <TouchableOpacity style={styles.logoutBtn} onPress={()=>{
+        router.replace("/(login)/login")
+      }}>
         <Ionicons name="log-out-outline" size={18} color="#fff" />
         <Text style={styles.logoutText}>Logout</Text>
       </TouchableOpacity>

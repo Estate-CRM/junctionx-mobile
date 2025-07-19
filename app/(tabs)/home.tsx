@@ -41,7 +41,7 @@ export default function AddPreferences() {
     return (
             <ScrollView style={{ padding: 12 }}>
                 <TopBar title="" subTitle="" />
-                <SearchBar label="search" placeholder="Search by city or address" />
+                <SearchBar label="" placeholder="Search by city or address" />
                 <Title  title="The most popular research"/>
 <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
   <View style={{ flexDirection: "row", paddingHorizontal: 10 }}>

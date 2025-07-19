@@ -37,7 +37,6 @@ const SearchBar: React.FC<CustomInputProps> = ({
         }}>
 
             <View style={styles.wrapper}>
-                <Text style={styles.label}>{label}</Text>
 
                 <View
                     style={[

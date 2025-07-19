@@ -30,8 +30,6 @@ export const mockProperties: Property[] = [
     features: ['garden', 'pool', 'garage'],
     description: 'Spacious villa with pool and private garden.',
     images: [
-      'https://example.com/villa1.jpg',
-      'https://example.com/villa2.jpg',
     ],
     created_at: new Date('2024-11-15T12:30:00Z'),
   },
@@ -47,8 +45,7 @@ export const mockProperties: Property[] = [
     features: ['elevator'],
     description: 'Affordable apartment close to metro station.',
     images: [
-      'https://example.com/apt3-1.jpg',
-    ],
+      ],
     created_at: new Date('2025-01-02T08:45:00Z'),
   },
   {
@@ -58,12 +55,12 @@ export const mockProperties: Property[] = [
     longitude: 3.10,
     price: 300000,
     area: 350,
-    property_type: 'villa',
+    property_type: 'house',
     rooms: 6,
     features: ['pool', 'garden', 'terrace', 'garage'],
-    description: 'Luxury villa with premium finishes and large outdoor area.',
+    description: 'Luxury house with premium finishes and large outdoor area.',
     images: [
-      'https://example.com/lux1.jpg',
+      'https://images-ext-1.discordapp.net/external/tB3uQOeLUVrxP504xpm-25Qf5_tqdijcAV4ZlsNryRA/https/i.pinimg.com/736x/89/73/5c/89735c60d0e4fc45e8cfdd15ab184aa9.jpg?format=webp&width=550&height=930',
       'https://example.com/lux2.jpg',
     ],
     created_at: new Date('2025-02-20T14:10:00Z'),
@@ -79,7 +76,7 @@ export const mockProperties: Property[] = [
     rooms: 0,
     features: [],
     description: 'Empty plot of land ready for construction.',
-    images: [],
+    images: ["https://imgs.search.brave.com/wS5qxAbLbUrpu6JPbuRy42hxV3GkwSJdacD_NYBAVQY/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTgy/ODY5Mzg3L3Bob3Rv/L2xhbmQtc3VydmV5/b3IuanBnP3M9NjEy/eDYxMiZ3PTAmaz0y/MCZjPWhSZWJTVDIt/OUc5czI4d29sb1p5/RnNyaDhqVVRYS1Nq/ZG5XMDFtaTZoX2s9"],
     created_at: new Date('2025-03-01T09:00:00Z'),
   },
 ];
